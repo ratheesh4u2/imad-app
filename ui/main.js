@@ -4,10 +4,10 @@ var element =document.getElementById("main-text");
 element.innerHTML="Main text is changed by main.js";
 var img =document.getElementById("madi");
 
-
+var marginleft = '100px';
 function moveRight()
 {
-    var marginleft    = marginleft+ '10px';
+    marginleft    = marginleft+ '10px';
     
     img.style.marginLeft = marginleft+ 'px';
 
