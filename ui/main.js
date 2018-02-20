@@ -10,7 +10,8 @@ function moveRight()
     marginleft    = marginleft+ 20 ;
     
     img.style.marginLeft = marginleft+ 'px';
-
+if (marginleft > scree.width)
+    marginleft=0;
 }
 
 img.onclick=function()
