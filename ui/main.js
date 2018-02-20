@@ -8,7 +8,6 @@ var marginleft = 0 ;
 function moveRight()
 {
     marginleft    = marginleft+ 20 ;
-    
     img.style.marginLeft = marginleft+ 'px';
 if (marginleft > screen.width/2)
     marginleft=0;
