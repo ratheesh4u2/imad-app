@@ -3,8 +3,19 @@ console.log('This is main.js');
 var element =document.getElementById("main-text");
 element.innerHTML="Main text is changed by main.js";
 var img =document.getElementById("madi");
+
+
+function moveRight()
+{
+    var marginleft    = marginleft+ '10px';
+    
+    img.style.marginLeft = marginleft+ 'px';
+
+}
+
 img.onclick=function()
 {
-    img.style.marginLeft = '200px';
+    var interval = setInterval(moveRight, 100);
+   
 };
     
