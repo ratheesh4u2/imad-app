@@ -19,21 +19,33 @@ img.onclick=function()
    
 };*/
 
-
 var button=document.getElementById('counter');
-var counter=0;
 button.onclick=function()
 {
-    //make a request to the counter endpoint
-    
-    
-    
+    //create a request to the counter endpoint
+    var request=new XMLHttpRequest();
     //store the response in a variable
+    request.onreadystatechange=function()
+    {
+        if (request.readyState==XMLRequest.DONE){
+            if (request.status==200){
+                
+                var counter=request.responseText;
+                var span=document.getElementById("count");
+                span.innerHTML=counter.toString();
+                
+            }
+            
+        }
+        
+    };
     
-    
-    //render the variable in the correct span
+    /*render the variable in the correct span
     counter=counter+1;
     var span=document.getElementById("count");
     span.innerHTML=counter.toString();
+    */
     
+    request.open('GET', 'http://ratheesh4u2.imad.hasura-app.io/counter',true);
+    request.send(null);
 }
