@@ -1,7 +1,7 @@
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    font-family: timesnewroman;
+    background-color: lightblue;
+    margin-top: 100px;
 }
 
 .center {
@@ -9,11 +9,12 @@ body {
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 3400%;
 }
 
 .bold {
     font-weight: bold;
+    font-style: italic;
 }
 
 .img-medium {
