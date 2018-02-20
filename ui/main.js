@@ -3,7 +3,7 @@ console.log('This is main.js');
 var element =document.getElementById("main-text");
 element.innerHTML="Main text is changed by main.js";
 var img =document.getElementById("madi");
-img.onlick=function()
+img.onClick=function()
 {
     img.style.marginLeft = '200px';
 };
